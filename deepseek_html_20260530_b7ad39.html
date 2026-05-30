@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="OB Personal Training Ireland - Premium 1-on-1 transformation coaching. 500+ men transformed. Book your free consultation today.">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="OB PERSONAL TRAINING | Premium Male Fitness Transformation Ireland">
+    <meta property="og:description" content="Transform your body and build unstoppable confidence with Ireland's #1 premium fitness coach. 500+ transformations. Free consultation available.">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=1200&q=80">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="en_IE">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="OB PERSONAL TRAINING | Premium Male Fitness Transformation">
+    <meta name="twitter:description" content="Ireland's #1 premium fitness coach. 500+ transformations. Start your journey today.">
+    
+    <title>OB PERSONAL TRAINING | Premium Fitness Coaching Ireland | Transform Your Body</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'f-black': '#0A0A0A',
+                        'f-charcoal': '#111111',
+                        'f-dark': '#1A1A1A',
+                        'f-neon': '#00FF88',
+                        'f-neon-dark': '#00CC6A',
+                        'f-neon-light': '#33FF99',
+                        'f-gray': '#2A2A2A',
+                        'f-light': '#E8E8E8',
+                        'f-gold': '#FFD700',
+                        'f-accent': '#00B4D8',
+                    },
+                    fontFamily: {
+                        'display': ['Montserrat', 'sans-serif'],
+                        'body': ['Inter', 'sans-serif'],
+                    },
+                    animation: {
+                        'float': 'float 6s ease-in-out infinite',
+                        'float-slow': 'float 8s ease-in-out infinite',
+                        'pulse-neon': 'pulseNeon 2s ease-in-out infinite',
+                        'glow': 'glow 2s ease-in-out infinite',
+                        'slideInUp': 'slideInUp 0.6s cubic-bezier(0.16, 1, 0.3, 1)',
+                        'slideInLeft': 'slideInLeft 0.8s cubic-bezier(0.16, 1, 0.3, 1)',
+                        'slideInRight': 'slideInRight 0.8s cubic-bezier(0.16, 1, 0.3, 1)',
+                        'scaleIn': 'scaleIn 0.5s cubic-bezier(0.16, 1, 0.3, 1)',
+                        'fadeIn': 'fadeIn 0.8s ease-out',
+                        'shimmer': 'shimmer 2s linear infinite',
+                        'bounce-gentle': 'bounceGentle 2s ease-in-out infinite',
+                    },
+                    keyframes: {
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0px) rotate(0deg)' },
+                            '33%': { transform: 'translateY(-15px) rotate(0.5deg)' },
+                            '66%': { transform: 'translateY(-8px) rotate(-0.5deg)' },
+                        },
+                        pulseNeon: {
+                            '0%, 100%': { boxShadow: '0 0 20px rgba(0, 255, 136, 0.3)' },
+                            '50%': { boxShadow: '0 0 40px rgba(0, 255, 136, 0.6)' },
+                        },
+                        glow: {
+                            '0%, 100%': { filter: 'brightness(1)' },
+                            '50%': { filter: 'brightness(1.2)' },
+                        },
+                        slideInUp: {
+                            '0%': { opacity: '0', transform: 'translateY(60px)' },
+                            '100%': { opacity: '1', transform: 'translateY(0)' },
+                        },
+                        slideInLeft: {
+                            '0%': { opacity: '0', transform: 'translateX(-60px)' },
+                            '100%': { opacity: '1', transform: 'translateX(0)' },
+                        },
+                        slideInRight: {
+                            '0%': { opacity: '0', transform: 'translateX(60px)' },
+                            '100%': { opacity: '1', transform: 'translateX(0)' },
+                        },
+                        scaleIn: {
+                            '0%': { opacity: '0', transform: 'scale(0.8)' },
+                            '100%': { opacity: '1', transform: 'scale(1)' },
+                        },
+                        fadeIn: {
+                            '0%': { opacity: '0' },
+                            '100%': { opacity: '1' },
+                        },
+                        shimmer: {
+                            '0%': { backgroundPosition: '-200% 0' },
+                            '100%': { backgroundPosition: '200% 0' },
+                        },
+                        bounceGentle: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-10px)' },
+                        },
+                    },
+                }
+            }
+        }
+    </script>
+    
+    <style>
+        * {
+            scroll-behavior: smooth;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+        
+        body {
+            background-color: #0A0A0A;
+            color: #E8E8E8;
+            font-family: 'Inter', sans-serif;
+            overflow-x: hidden;
+            cursor: default;
+        }
+        
+        /* Premium Glass Effects */
+        .glass-nav {
+            background: rgba(10, 10, 10, 0.85);
+            backdrop-filter: blur(30px) saturate(180%);
+            -webkit-backdrop-filter: blur(30px) saturate(180%);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        }
+        
+        .glass-card {
+            background: rgba(26, 26, 26, 0.7);
+            backdrop-filter: blur(20px) saturate(180%);
+            -webkit-backdrop-filter: blur(20px) saturate(180%);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        
+        .glass-card:hover {
+            border-color: rgba(0, 255, 136, 0.3);
+            transform: translateY(-8px);
+            box-shadow: 0 30px 60px rgba(0, 0, 0, 0.5), 0 0 40px rgba(0, 255, 136, 0.1);
+        }
+        
+        .glass-card-premium {
+            background: rgba(20, 20, 20, 0.8);
+            backdrop-filter: blur(25px) saturate(200%);
+            -webkit-backdrop-filter: blur(25px) saturate(200%);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        
+        .glass-card-premium:hover {
+            border-color: rgba(0, 255, 136, 0.4);
+            box-shadow: 0 40px 80px rgba(0, 0, 0, 0.6), 0 0 60px rgba(0, 255, 136, 0.15);
+            transform: translateY(-10px);
+        }
+        
+        /* Neon Effects */
+        .neon-text {
+            background: linear-gradient(135deg, #00FF88 0%, #00CC6A 50%, #00FF88 100%);
+            background-size: 200% auto;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            animation: shimmer 3s linear infinite;
+        }
+        
+        .neon-border {
+            border: 2px solid #00FF88;
+            box-shadow: 0 0 20px rgba(0, 255, 136, 0.3), inset 0 0 20px rgba(0, 255, 136, 0.1);
+        }
+        
+        .neon-glow {
+            box-shadow: 0 0 30px rgba(0, 255, 136, 0.4);
+            transition: all 0.3s ease;
+        }
+        
+        .neon-glow:hover {
+            box-shadow: 0 0 60px rgba(0, 255, 136, 0.6);
+            transform: scale(1.02);
+        }
+        
+        /* Hero Gradient */
+        .hero-overlay {
+            background: radial-gradient(circle at center, transparent 0%, rgba(10,10,10,0.6) 60%, rgba(10,10,10,0.95) 100%);
+        }
+        
+        /* Text Gradient */
+        .text-gradient {
+            background: linear-gradient(135deg, #00FF88 0%, #00B4D8 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        /* Animated Border */
+        .animated-border {
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .animated-border::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 2px;
+            background: linear-gradient(90deg, transparent, #00FF88, transparent);
+            animation: borderSlide 3s linear infinite;
+        }
+        
+        @keyframes borderSlide {
+            0% { left: -100%; }
+            100% { left: 100%; }
+        }
+        
+        /* Smooth Scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        
+        ::-webkit-scrollbar-track {
+            background: #0A0A0A;
+        }
+        
+        ::-webkit-scrollbar-thumb {
+            background: linear-gradient(180deg, #00FF88, #00CC6A);
+            border-radius: 4px;
+        }
+        
+        ::-webkit-scrollbar-thumb:hover {
+            background: #00FF88;
+        }
+        
+        /* Chatbot Styles */
+        .chat-window {
+            width: 400px;
+            max-height: 600px;
+            background: rgba(17, 17, 17, 0.98);
+            backdrop-filter: blur(30px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 24px;
+            overflow: hidden;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.8), 0 0 40px rgba(0, 255, 136, 0.2);
+        }
+        
+        .typing-dot {
+            animation: typingDot 1.4s infinite;
+        }
+        
+        .typing-dot:nth-child(2) {
+            animation-delay: 0.2s;
+        }
+        
+        .typing-dot:nth-child(3) {
+            animation-delay: 0.4s;
+        }
+        
+        @keyframes typingDot {
+            0%, 60%, 100% { transform: translateY(0); opacity: 0.4; }
+            30% { transform: translateY(-8px); opacity: 1; }
+        }
+        
+        /* Pulse Ring */
+        .pulse-ring {
+            animation: pulseRing 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+        }
+        
+        @keyframes pulseRing {
+            0% { transform: scale(1); opacity: 1; }
+            50% { transform: scale(1.1); opacity: 0.5; }
+            100% { transform: scale(1); opacity: 1; }
+        }
+        
+        /* Image Zoom on Hover */
+        .image-zoom {
+            overflow: hidden;
+        }
+        
+        .image-zoom img {
+            transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        
+        .image-zoom:hover img {
+            transform: scale(1.08);
+        }
+        
+        /* Notification Badge */
+        .notification-badge {
+            animation: notificationPulse 2s ease-in-out infinite;
+        }
+        
+        @keyframes notificationPulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.2); }
+        }
+        
+        /* Background Pattern */
+        .bg-pattern {
+            background-image: radial-gradient(rgba(0, 255, 136, 0.05) 1px, transparent 1px);
+            background-size: 50px 50px;
+        }
+    </style>
+</head>
+<body class="bg-f-black">
+
+    <!-- Premium Navigation - Updated to OB Personal Training -->
+    <nav class="fixed top-0 left-0 right-0 z-50 glass-nav">
+        <div class="max-w-7xl mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <a href="#" class="flex items-center gap-2 group">
+                    <div class="text-3xl">🔥</div>
+                    <div>
+                        <div class="text-xl font-display font-black tracking-tight">
+                            <span class="neon-text">OB</span>
+                            <span class="text-white">PERSONAL TRAINING</span>
+                        </div>
+                        <div class="text-[10px] text-gray-500 tracking-widest uppercase">Ireland</div>
+                    </div>
+                </a>
+                
+                <!-- Desktop Menu -->
+                <div class="hidden lg:flex items-center space-x-1">
+                    <a href="#home" class="px-4 py-2 text-sm font-medium text-gray-300 hover:text-f-neon transition-colors rounded-lg hover:bg-white/5">Home</a>
+                    <a href="#about" class="px-4 py-2 text-sm font-medium text-gray-300 hover:text-f-neon transition-colors rounded-lg hover:bg-white/5">About</a>
+                    <a href="#services" class="px-4 py-2 text-sm font-medium text-gray-300 hover:text-f-neon transition-colors rounded-lg hover:bg-white/5">Services</a>
+                    <a href="#transformations" class="px-4 py-2 text-sm font-medium text-gray-300 hover:text-f-neon transition-colors rounded-lg hover:bg-white/5">Results</a>
+                    <a href="#testimonials" class="px-4 py-2 text-sm font-medium text-gray-300 hover:text-f-neon transition-colors rounded-lg hover:bg-white/5">Reviews</a>
+                    <a href="#faq" class="px-4 py-2 text-sm font-medium text-gray-300 hover:text-f-neon transition-colors rounded-lg hover:bg-white/5">FAQ</a>
+                    <a href="#contact" class="px-4 py-2 text-sm font-medium text-gray-300 hover:text-f-neon transition-colors rounded-lg hover:bg-white/5">Contact</a>
+                </div>
+                
+                <div class="flex items-center gap-3">
+                    <button onclick="toggleChat()" class="hidden sm:flex items-center gap-2 px-4 py-2 rounded-full bg-white/5 border border-white/10 hover:border-f-neon/50 transition-all text-sm">
+                        <i class="fas fa-robot text-f-neon"></i>
+                        <span class="text-gray-300">AI Assistant</span>
+                    </button>
+                    <a href="#contact" class="bg-f-neon text-black px-6 py-2.5 rounded-full font-bold text-sm hover:bg-f-neon-dark transition-all neon-glow flex items-center gap-2">
+                        Free Consultation
+                        <i class="fas fa-arrow-right text-xs"></i>
+                    </a>
+                    <button class="lg:hidden text-2xl text-white">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="relative min-h-screen flex items-center overflow-hidden bg-pattern">
+        <div class="absolute inset-0">
+            <img src="https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?w=1920&q=90" 
+                 alt="OB Personal Training Fitness Coach" 
+                 class="w-full h-full object-cover object-center"
+                 loading="eager">
+            <div class="absolute inset-0 hero-overlay"></div>
+        </div>
+        
+        <div class="absolute top-20 right-20 w-64 h-64 bg-f-neon/5 rounded-full blur-3xl animate-float"></div>
+        <div class="absolute bottom-40 left-20 w-96 h-96 bg-f-accent/5 rounded-full blur-3xl animate-float-slow"></div>
+        
+        <div class="relative z-10 max-w-7xl mx-auto px-6 py-20 mt-16">
+            <div class="max-w-4xl">
+                <div class="inline-flex items-center gap-3 glass-card rounded-full px-5 py-2.5 mb-8 animate-fadeIn">
+                    <div class="flex -space-x-2">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=50&h=50&q=80" class="w-8 h-8 rounded-full border-2 border-f-charcoal">
+                        <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=50&h=50&q=80" class="w-8 h-8 rounded-full border-2 border-f-charcoal">
+                        <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=50&h=50&q=80" class="w-8 h-8 rounded-full border-2 border-f-charcoal">
+                    </div>
+                    <span class="text-sm text-gray-300">Trusted by <span class="text-f-neon font-bold">500+</span> men in Ireland</span>
+                    <span class="text-f-gold text-xs">★★★★★</span>
+                </div>
+                
+                <h1 class="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-display font-black leading-[0.95] mb-8 tracking-tight">
+                    <span class="block animate-slideInLeft">Transform</span>
+                    <span class="block animate-slideInLeft" style="animation-delay: 0.1s;">Your Body.</span>
+                    <span class="block neon-text animate-slideInLeft" style="animation-delay: 0.2s;">Build Confidence.</span>
+                </h1>
+                
+                <p class="text-lg sm:text-xl md:text-2xl text-gray-300 mb-10 max-w-2xl leading-relaxed animate-slideInUp" style="animation-delay: 0.3s;">
+                    Ireland's most <span class="text-f-neon font-semibold">results-driven</span> personal training for men. 
+                    Lose fat, build muscle, and become the strongest version of yourself with <span class="text-white font-semibold">1-on-1 expert guidance</span> from OB.
+                </p>
+                
+                <div class="flex flex-col sm:flex-row gap-4 animate-slideInUp" style="animation-delay: 0.4s;">
+                    <a href="#contact" class="group bg-f-neon text-black px-8 py-4 rounded-full font-bold text-lg hover:bg-f-neon-dark transition-all neon-glow flex items-center justify-center gap-3 text-center">
+                        Start Free Consultation
+                        <i class="fas fa-arrow-right group-hover:translate-x-1 transition-transform"></i>
+                    </a>
+                    <a href="#transformations" class="group glass-card px-8 py-4 rounded-full font-bold text-lg hover:border-f-neon transition-all flex items-center justify-center gap-3 text-center">
+                        <i class="fas fa-play-circle text-f-neon"></i>
+                        See Real Results
+                        <i class="fas fa-chevron-down group-hover:translate-y-1 transition-transform"></i>
+                    </a>
+                </div>
+                
+                <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 mt-12 animate-slideInUp" style="animation-delay: 0.5s;">
+                    <div class="glass-card rounded-2xl p-4 text-center">
+                        <div class="text-2xl sm:text-3xl font-black text-f-neon counter" data-target="500">0</div>
+                        <div class="text-xs text-gray-400 mt-1">Clients Coached</div>
+                    </div>
+                    <div class="glass-card rounded-2xl p-4 text-center">
+                        <div class="text-2xl sm:text-3xl font-black text-f-neon counter" data-target="1200">0</div>
+                        <div class="text-xs text-gray-400 mt-1">kg Fat Lost</div>
+                    </div>
+                    <div class="glass-card rounded-2xl p-4 text-center">
+                        <div class="text-2xl sm:text-3xl font-black text-f-neon counter" data-target="7">0</div>
+                        <div class="text-xs text-gray-400 mt-1">Years Experience</div>
+                    </div>
+                    <div class="glass-card rounded-2xl p-4 text-center">
+                        <div class="text-2xl sm:text-3xl font-black text-f-neon counter" data-target="98">0</div>
+                        <div class="text-xs text-gray-400 mt-1">% Satisfaction</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 flex flex-col items-center gap-2 animate-bounce-gentle">
+            <span class="text-xs text-gray-500 uppercase tracking-widest">Scroll</span>
+            <i class="fas fa-chevron-down text-f-neon"></i>
+        </div>
+    </section>
+
+    <!-- AI Popup Suggestions -->
+    <div id="aiPopup" class="fixed bottom-32 right-8 z-40 max-w-sm transition-all duration-500 transform" style="opacity: 0; transform: translateX(400px);">
+        <div class="glass-card-premium rounded-2xl p-6 relative">
+            <button onclick="closeAIPopup()" class="absolute top-3 right-3 text-gray-500 hover:text-white">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="flex items-start gap-3 mb-4">
+                <div class="w-10 h-10 bg-f-neon/20 rounded-full flex items-center justify-center flex-shrink-0">
+                    <i class="fas fa-robot text-f-neon"></i>
+                </div>
+                <div>
+                    <p class="font-bold text-sm">OB AI Assistant</p>
+                    <p class="text-xs text-gray-400">Click a question below 👇</p>
+                </div>
+            </div>
+            <div class="space-y-2">
+                <div onclick="askAI('How much does coaching cost?')" class="cursor-pointer glass-card rounded-xl p-3 hover:border-f-neon transition-all group">
+                    <p class="text-sm flex items-center gap-2"><span class="text-f-neon">💰</span> How much does coaching cost?<i class="fas fa-arrow-right text-xs text-gray-600 group-hover:text-f-neon ml-auto"></i></p>
+                </div>
+                <div onclick="askAI('How quickly can I see results?')" class="cursor-pointer glass-card rounded-xl p-3 hover:border-f-neon transition-all group">
+                    <p class="text-sm flex items-center gap-2"><span class="text-f-neon">⚡</span> How quickly can I see results?<i class="fas fa-arrow-right text-xs text-gray-600 group-hover:text-f-neon ml-auto"></i></p>
+                </div>
+                <div onclick="askAI('I\'m a complete beginner, can I join?')" class="cursor-pointer glass-card rounded-xl p-3 hover:border-f-neon transition-all group">
+                    <p class="text-sm flex items-center gap-2"><span class="text-f-neon">🎯</span> I'm a beginner, can I join?<i class="fas fa-arrow-right text-xs text-gray-600 group-hover:text-f-neon ml-auto"></i></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- About Section - Updated to OB -->
+    <section id="about" class="py-24 relative overflow-hidden">
+        <div class="absolute top-0 right-0 w-[500px] h-[500px] bg-f-neon/3 rounded-full blur-3xl"></div>
+        <div class="max-w-7xl mx-auto px-6 relative">
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+                <div class="relative animate-slideInLeft">
+                    <div class="relative image-zoom rounded-3xl overflow-hidden shadow-2xl">
+                        <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=800&q=90" 
+                             alt="Coach OB - Premium Personal Trainer Ireland" 
+                             class="w-full aspect-[3/4] object-cover"
+                             loading="lazy">
+                        <div class="absolute inset-0 bg-gradient-to-t from-f-black via-transparent to-transparent"></div>
+                    </div>
+                    <div class="absolute -bottom-6 -right-6 glass-card-premium rounded-2xl p-5 animate-float">
+                        <div class="flex items-center gap-3">
+                            <div class="w-12 h-12 bg-f-neon/20 rounded-full flex items-center justify-center">
+                                <i class="fas fa-trophy text-f-neon text-xl"></i>
+                            </div>
+                            <div><div class="text-2xl font-black text-f-neon">7+</div><div class="text-xs text-gray-400">Years Coaching</div></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="space-y-6 animate-slideInRight">
+                    <div class="inline-block glass-card rounded-full px-4 py-1.5 text-f-neon text-sm font-semibold">
+                        <i class="fas fa-star mr-2"></i>Your Coach
+                    </div>
+                    <h2 class="text-4xl sm:text-5xl lg:text-6xl font-display font-black leading-tight">
+                        Meet <span class="neon-text">OB</span> – Your Transformation Specialist
+                    </h2>
+                    <div class="space-y-4 text-gray-300 leading-relaxed text-lg">
+                        <p><span class="text-white font-bold">OB (Ollie Brennan)</span> — I spent years feeling uncomfortable in my own skin. At 110kg, I decided enough was enough. I lost <span class="text-f-neon font-bold">32kg in 8 months</span> and completely transformed my life.</p>
+                        <p>That journey ignited a passion to help other men do the same. Over the past 7 years, I've helped <span class="text-f-neon font-bold">500+ men</span> across Ireland lose fat, build muscle, and regain their confidence.</p>
+                    </div>
+                    <div class="grid grid-cols-2 gap-3 pt-4">
+                        <div class="flex items-center gap-3 glass-card rounded-xl p-3"><i class="fas fa-check-circle text-f-neon text-xl"></i><span class="text-sm">Strength & Conditioning Specialist</span></div>
+                        <div class="flex items-center gap-3 glass-card rounded-xl p-3"><i class="fas fa-check-circle text-f-neon text-xl"></i><span class="text-sm">Precision Nutrition Coach L2</span></div>
+                        <div class="flex items-center gap-3 glass-card rounded-xl p-3"><i class="fas fa-check-circle text-f-neon text-xl"></i><span class="text-sm">500+ Transformations</span></div>
+                        <div class="flex items-center gap-3 glass-card rounded-xl p-3"><i class="fas fa-check-circle text-f-neon text-xl"></i><span class="text-sm">Online & In-Person Coaching</span></div>
+                    </div>
+                    <div class="flex gap-4 pt-4">
+                        <a href="#contact" class="bg-f-neon text-black px-8 py-3.5 rounded-full font-bold hover:bg-f-neon-dark transition-all neon-glow flex items-center gap-2">Work With Me <i class="fas fa-arrow-right"></i></a>
+                        <a href="#transformations" class="glass-card px-8 py-3.5 rounded-full font-bold hover:border-f-neon transition-all">View Results</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Transformations Section -->
+    <section id="transformations" class="py-24 bg-f-charcoal relative overflow-hidden">
+        <div class="absolute inset-0 bg-pattern opacity-50"></div>
+        <div class="max-w-7xl mx-auto px-6 relative">
+            <div class="text-center mb-16">
+                <div class="inline-block glass-card rounded-full px-4 py-1.5 text-f-neon text-sm font-semibold mb-4"><i class="fas fa-chart-line mr-2"></i>Real Results</div>
+                <h2 class="text-4xl sm:text-5xl lg:text-6xl font-display font-black mb-4"><span class="neon-text">Transformations</span> That Speak</h2>
+                <p class="text-gray-400 text-lg max-w-2xl mx-auto">No fake promises. Real clients who committed to the process with OB.</p>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="glass-card-premium rounded-2xl overflow-hidden group"><div class="grid grid-cols-2 gap-1 p-3"><div class="relative image-zoom rounded-xl overflow-hidden"><img src="https://images.unsplash.com/photo-1568602471122-7832951cc4c5?w=500&q=80" class="w-full aspect-square object-cover"><span class="absolute top-2 left-2 bg-red-500/80 text-white text-xs px-2 py-1 rounded-full">Before</span></div><div class="relative image-zoom rounded-xl overflow-hidden"><img src="https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?w=500&q=80" class="w-full aspect-square object-cover"><span class="absolute top-2 right-2 bg-f-neon/80 text-black text-xs px-2 py-1 rounded-full font-bold">After</span></div></div><div class="p-6"><div class="flex justify-between items-start mb-3"><div><h3 class="font-bold text-lg">David K.</h3><p class="text-xs text-gray-500">Dublin</p></div><div class="text-f-gold">★★★★★</div></div><div class="grid grid-cols-3 gap-2 mb-4"><div class="text-center"><div class="text-xl font-black text-f-neon">-24kg</div><div class="text-[10px] text-gray-500">Lost</div></div><div class="text-center"><div class="text-xl font-black text-f-neon">6</div><div class="text-[10px] text-gray-500">Months</div></div><div class="text-center"><div class="text-xl font-black text-f-neon">36</div><div class="text-[10px] text-gray-500">Years Old</div></div></div><p class="text-gray-300 text-sm italic">"From 106kg to 82kg. OB changed everything."</p></div></div>
+                <div class="glass-card-premium rounded-2xl overflow-hidden group"><div class="grid grid-cols-2 gap-1 p-3"><div class="relative image-zoom rounded-xl overflow-hidden"><img src="https://images.unsplash.com/photo-1567013127542-490d757e51fc?w=500&q=80" class="w-full aspect-square object-cover"><span class="absolute top-2 left-2 bg-gray-500/80 text-white text-xs px-2 py-1 rounded-full">Before</span></div><div class="relative image-zoom rounded-xl overflow-hidden"><img src="https://images.unsplash.com/photo-1594381898411-846e7d193883?w=500&q=80" class="w-full aspect-square object-cover"><span class="absolute top-2 right-2 bg-f-neon/80 text-black text-xs px-2 py-1 rounded-full font-bold">After</span></div></div><div class="p-6"><div class="flex justify-between items-start mb-3"><div><h3 class="font-bold text-lg">Connor R.</h3><p class="text-xs text-gray-500">Cork</p></div><div class="text-f-gold">★★★★★</div></div><div class="grid grid-cols-3 gap-2 mb-4"><div class="text-center"><div class="text-xl font-black text-f-neon">+12kg</div><div class="text-[10px] text-gray-500">Muscle</div></div><div class="text-center"><div class="text-xl font-black text-f-neon">5</div><div class="text-[10px] text-gray-500">Months</div></div><div class="text-center"><div class="text-xl font-black text-f-neon">24</div><div class="text-[10px] text-gray-500">Years Old</div></div></div><p class="text-gray-300 text-sm italic">"Went from 68kg to 80kg lean muscle."</p></div></div>
+                <div class="glass-card-premium rounded-2xl overflow-hidden group"><div class="grid grid-cols-2 gap-1 p-3"><div class="relative image-zoom rounded-xl overflow-hidden"><img src="https://images.unsplash.com/photo-1588286840104-8957b019727f?w=500&q=80" class="w-full aspect-square object-cover"><span class="absolute top-2 left-2 bg-red-500/80 text-white text-xs px-2 py-1 rounded-full">Before</span></div><div class="relative image-zoom rounded-xl overflow-hidden"><img src="https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?w=500&q=80" class="w-full aspect-square object-cover"><span class="absolute top-2 right-2 bg-f-neon/80 text-black text-xs px-2 py-1 rounded-full font-bold">After</span></div></div><div class="p-6"><div class="flex justify-between items-start mb-3"><div><h3 class="font-bold text-lg">Michael D.</h3><p class="text-xs text-gray-500">Galway</p></div><div class="text-f-gold">★★★★★</div></div><div class="grid grid-cols-3 gap-2 mb-4"><div class="text-center"><div class="text-xl font-black text-f-neon">-18kg</div><div class="text-[10px] text-gray-500">Lost</div></div><div class="text-center"><div class="text-xl font-black text-f-neon">4</div><div class="text-[10px] text-gray-500">Months</div></div><div class="text-center"><div class="text-xl font-black text-f-neon">42</div><div class="text-[10px] text-gray-500">Years Old</div></div></div><p class="text-gray-300 text-sm italic">"Best investment I've ever made."</p></div></div>
+            </div>
+            <div class="text-center mt-12"><a href="#contact" class="inline-flex items-center gap-3 bg-f-neon text-black px-10 py-4 rounded-full font-bold text-lg hover:bg-f-neon-dark transition-all neon-glow">Start Your Transformation <i class="fas fa-arrow-right"></i></a></div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-24 relative">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <div class="inline-block glass-card rounded-full px-4 py-1.5 text-f-neon text-sm font-semibold mb-4"><i class="fas fa-dumbbell mr-2"></i>Coaching Programs</div>
+                <h2 class="text-4xl sm:text-5xl lg:text-6xl font-display font-black mb-4">Choose Your <span class="neon-text">Program</span></h2>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="glass-card rounded-3xl p-8 group"><div class="text-4xl mb-6">🎯</div><h3 class="text-2xl font-bold mb-2">Online Coaching</h3><p class="text-gray-400 mb-6">Complete transformation program with custom workouts and nutrition.</p><div class="text-4xl font-black mb-6">€299<span class="text-lg text-gray-400 font-normal">/mo</span></div><ul class="space-y-3 mb-8"><li class="flex items-center gap-2 text-sm"><i class="fas fa-check text-f-neon"></i> Custom workout plans</li><li class="flex items-center gap-2 text-sm"><i class="fas fa-check text-f-neon"></i> Nutrition guidance</li><li class="flex items-center gap-2 text-sm"><i class="fas fa-check text-f-neon"></i> Weekly check-ins</li></ul><a href="#contact" class="block text-center glass-card rounded-full py-3 font-bold hover:bg-f-neon hover:text-black transition-all">Get Started</a></div>
+                <div class="glass-card rounded-3xl p-8 group border-f-neon border-2 relative transform scale-105"><div class="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-f-neon text-black px-6 py-1.5 rounded-full text-sm font-bold">Most Popular</div><div class="text-4xl mb-6">💪</div><h3 class="text-2xl font-bold mb-2">Fat Loss Accelerator</h3><p class="text-gray-400 mb-6">Rapid fat loss program with daily accountability and meal plans.</p><div class="text-4xl font-black mb-6">€399<span class="text-lg text-gray-400 font-normal">/mo</span></div><ul class="space-y-3 mb-8"><li class="flex items-center gap-2 text-sm"><i class="fas fa-check text-f-neon"></i> Custom meal plans</li><li class="flex items-center gap-2 text-sm"><i class="fas fa-check text-f-neon"></i> Daily accountability</li><li class="flex items-center gap-2 text-sm"><i class="fas fa-check text-f-neon"></i> Supplement protocol</li></ul><a href="#contact" class="block text-center bg-f-neon text-black rounded-full py-3 font-bold hover:bg-f-neon-dark transition-all neon-glow">Start Now</a></div>
+                <div class="glass-card rounded-3xl p-8 group"><div class="text-4xl mb-6">👑</div><h3 class="text-2xl font-bold mb-2">Muscle Building</h3><p class="text-gray-400 mb-6">Strategic hypertrophy program for maximum lean muscle growth.</p><div class="text-4xl font-black mb-6">€349<span class="text-lg text-gray-400 font-normal">/mo</span></div><ul class="space-y-3 mb-8"><li class="flex items-center gap-2 text-sm"><i class="fas fa-check text-f-neon"></i> Progressive overload plan</li><li class="flex items-center gap-2 text-sm"><i class="fas fa-check text-f-neon"></i> Macro optimization</li><li class="flex items-center gap-2 text-sm"><i class="fas fa-check text-f-neon"></i> Body comp tracking</li></ul><a href="#contact" class="block text-center glass-card rounded-full py-3 font-bold hover:bg-f-neon hover:text-black transition-all">Build Muscle</a></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-16 bg-f-black border-t border-gray-800/50">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid md:grid-cols-4 gap-12 mb-12">
+                <div><div class="text-2xl font-display font-black mb-4"><span class="neon-text">OB</span><span>PERSONAL TRAINING</span></div><p class="text-gray-500 text-sm leading-relaxed">Premium personal training for men in Ireland. Transform your body and build unstoppable confidence.</p></div>
+                <div><h4 class="font-bold mb-4 text-white">Quick Links</h4><div class="space-y-2.5 text-gray-400 text-sm"><div><a href="#about" class="hover:text-f-neon transition-colors">About OB</a></div><div><a href="#services" class="hover:text-f-neon transition-colors">Programs</a></div><div><a href="#transformations" class="hover:text-f-neon transition-colors">Results</a></div><div><a href="#contact" class="hover:text-f-neon transition-colors">Contact</a></div></div></div>
+                <div><h4 class="font-bold mb-4 text-white">Contact</h4><div class="space-y-2.5 text-gray-400 text-sm"><div><i class="fas fa-envelope text-f-neon mr-2"></i>ob@personaltraining.ie</div><div><i class="fas fa-phone text-f-neon mr-2"></i>+353 83 123 4567</div><div><i class="fas fa-map-marker-alt text-f-neon mr-2"></i>Dublin, Ireland</div></div></div>
+                <div><h4 class="font-bold mb-4 text-white">Follow</h4><div class="flex gap-3"><a href="#" class="w-10 h-10 glass-card rounded-full flex items-center justify-center hover:border-f-neon transition-all"><i class="fab fa-instagram"></i></a><a href="#" class="w-10 h-10 glass-card rounded-full flex items-center justify-center hover:border-f-neon transition-all"><i class="fab fa-youtube"></i></a><a href="#" class="w-10 h-10 glass-card rounded-full flex items-center justify-center hover:border-f-neon transition-all"><i class="fab fa-tiktok"></i></a></div></div>
+            </div>
+            <div class="text-center text-gray-600 text-sm pt-8 border-t border-gray-800/50">© 2024 OB Personal Training. All rights reserved. | <a href="#" class="hover:text-gray-400">Privacy Policy</a> | <a href="#" class="hover:text-gray-400">Terms</a></div>
+        </div>
+    </footer>
+
+    <!-- Chatbot Container -->
+    <div class="fixed bottom-8 right-8 z-50"><button onclick="toggleChat()" id="chatToggleBtn" class="bg-f-neon text-black w-16 h-16 rounded-full flex items-center justify-center text-2xl neon-glow hover:scale-110 transition-all shadow-2xl relative"><i class="fas fa-robot"></i><span class="absolute -top-1 -right-1 w-4 h-4 bg-red-500 rounded-full notification-badge"></span></button></div>
+    <div id="chatWindow" class="fixed bottom-28 right-8 chat-window hidden z-50"><div class="bg-f-charcoal p-5 border-b border-gray-800 flex items-center justify-between"><div class="flex items-center gap-3"><div class="w-10 h-10 bg-f-neon/20 rounded-full flex items-center justify-center"><i class="fas fa-robot text-f-neon"></i></div><div><div class="font-bold text-sm">OB AI Assistant</div><div class="text-xs text-f-neon flex items-center gap-1"><span class="w-2 h-2 bg-f-neon rounded-full"></span> Online</div></div></div><button onclick="toggleChat()" class="text-gray-500 hover:text-white text-xl"><i class="fas fa-times"></i></button></div><div class="p-5 h-96 overflow-y-auto space-y-4" id="chatMessages"><div class="flex justify-start"><div class="bg-f-dark rounded-2xl p-4 max-w-[85%]"><p class="text-sm">Hey! 👋 I'm OB's AI assistant. I can answer questions about coaching, pricing, programs, and results. How can I help you today?</p><p class="text-[10px] text-gray-600 mt-2">Just now</p></div></div></div><div class="p-4 border-t border-gray-800"><div class="flex gap-2"><input type="text" id="chatInput" placeholder="Ask anything..." class="flex-1 bg-f-dark rounded-xl px-4 py-3 text-sm border border-gray-700 focus:border-f-neon outline-none" onkeypress="if(event.key==='Enter')sendMessage()"><button onclick="sendMessage()" class="bg-f-neon text-black px-5 py-3 rounded-xl font-semibold text-sm hover:bg-f-neon-dark transition-all"><i class="fas fa-paper-plane"></i></button></div></div></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        new Swiper(".testimonialSwiper", { slidesPerView: 1, spaceBetween: 20, loop: true, autoplay: { delay: 4000 }, pagination: { el: ".swiper-pagination", clickable: true }, breakpoints: { 768: { slidesPerView: 2 }, 1024: { slidesPerView: 3 } } });
+        setTimeout(() => { const popup = document.getElementById('aiPopup'); popup.style.opacity = '1'; popup.style.transform = 'translateX(0)'; }, 3000);
+        function closeAIPopup() { const popup = document.getElementById('aiPopup'); popup.style.opacity = '0'; popup.style.transform = 'translateX(400px)'; }
+        function askAI(question) { closeAIPopup(); toggleChat(); setTimeout(() => { document.getElementById('chatInput').value = question; sendMessage(); }, 500); }
+        let chatOpen = false;
+        function toggleChat() { chatOpen = !chatOpen; const chatWindow = document.getElementById('chatWindow'); if (chatOpen) chatWindow.classList.remove('hidden'); else chatWindow.classList.add('hidden'); }
+        const aiKnowledge = { pricing: { keywords: ['price', 'cost', 'much', 'fee', 'pay', 'pricing'], response: "💰 Our coaching programs:\n\n• <b>Online Coaching</b>: €299/month\n• <b>Fat Loss Accelerator</b>: €399/month\n• <b>Muscle Building</b>: €349/month\n\nAll include a <b>FREE consultation</b>!" }, default: { keywords: [], response: "Great question! 😊 Ask me about pricing, results, beginner programs, or book a free consultation with OB!" } };
+        function sendMessage() {
+            const input = document.getElementById('chatInput'); const message = input.value.trim(); if (!message) return;
+            const messagesDiv = document.getElementById('chatMessages');
+            messagesDiv.innerHTML += `<div class="flex justify-end"><div class="bg-f-neon/20 rounded-2xl p-4 max-w-[85%] border border-f-neon/30"><p class="text-sm">${message}</p><p class="text-[10px] text-gray-500 mt-2">Just now</p></div></div>`;
+            let response = aiKnowledge.default.response;
+            const lowerMsg = message.toLowerCase();
+            if (lowerMsg.includes('price') || lowerMsg.includes('cost') || lowerMsg.includes('€') || lowerMsg.includes('euro')) response = aiKnowledge.pricing.response;
+            messagesDiv.innerHTML += `<div class="flex justify-start" id="typingIndicator"><div class="bg-f-dark rounded-2xl p-4"><div class="flex gap-1"><div class="w-2 h-2 bg-gray-500 rounded-full typing-dot"></div><div class="w-2 h-2 bg-gray-500 rounded-full typing-dot"></div><div class="w-2 h-2 bg-gray-500 rounded-full typing-dot"></div></div></div></div>`;
+            messagesDiv.scrollTop = messagesDiv.scrollHeight;
+            setTimeout(() => { const ti = document.getElementById('typingIndicator'); if (ti) ti.remove(); messagesDiv.innerHTML += `<div class="flex justify-start"><div class="bg-f-dark rounded-2xl p-4 max-w-[85%]"><p class="text-sm leading-relaxed">${response}</p><p class="text-[10px] text-gray-600 mt-2">Just now</p></div></div>`; messagesDiv.scrollTop = messagesDiv.scrollHeight; }, 1000);
+            input.value = ''; input.focus();
+        }
+        function handleContactSubmit(event) { event.preventDefault(); const btn = event.target.querySelector('button[type="submit"]'); btn.innerHTML = '<i class="fas fa-check"></i> Consultation Requested!'; setTimeout(() => { btn.innerHTML = 'Book My Free Consultation <i class="fas fa-arrow-right"></i>'; }, 3000); }
+        const observer = new IntersectionObserver((entries) => { entries.forEach(entry => { if (entry.isIntersecting) { entry.target.style.opacity = '1'; entry.target.style.transform = 'translateY(0)'; } }); }, { threshold: 0.1 });
+        document.querySelectorAll('.glass-card, .glass-card-premium').forEach(el => { el.style.opacity = '0'; el.style.transform = 'translateY(30px)'; el.style.transition = 'all 0.6s cubic-bezier(0.16, 1, 0.3, 1)'; observer.observe(el); });
+        const counterObserver = new IntersectionObserver((entries) => { entries.forEach(entry => { if (entry.isIntersecting) { const counter = entry.target; const target = parseInt(counter.getAttribute('data-target')); let current = 0; const interval = setInterval(() => { current += Math.ceil(target / 30); if (current >= target) { counter.textContent = target; clearInterval(interval); } else counter.textContent = current; }, 30); counterObserver.unobserve(counter); } }); }, { threshold: 0.5 });
+        document.querySelectorAll('.counter').forEach(el => counterObserver.observe(el));
+    </script>
+    <script type="application/ld+json">
+        { "@context": "https://schema.org", "@type": "LocalBusiness", "name": "OB Personal Training", "description": "Premium male fitness coaching in Ireland. 1-on-1 personal training, fat loss programs, and muscle building transformations.", "image": "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=1200&q=80", "address": { "@type": "PostalAddress", "addressLocality": "Dublin", "addressCountry": "IE" }, "telephone": "+353831234567", "email": "ob@personaltraining.ie", "priceRange": "€299-€399", "aggregateRating": { "@type": "AggregateRating", "ratingValue": "5.0", "reviewCount": "500" } }
+    </script>
+</body>
+</html>
